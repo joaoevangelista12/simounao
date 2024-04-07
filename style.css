@@ -1,85 +1,38 @@
-@import url('https://fonts.google.com/share?selection.family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700');
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
-
-#cabecalho {
-    color: rgb(8, 8, 8);
-    background-color: #D7D9D9;
-    padding-left: 250px;
-
-}
-body {
-    margin: 0;
-    background-color: #400101;
-    color: white;
-     
-}
-
-main {
-    border: 1px solid #000;
-    font-family: 'Cormorant Garamond', serif;
-    margin: auto;
-    width: 80%;
-    padding: 0px 10px;
-    /* padding: 10px; */
-}
-
-.container {
-    width: 100%;
+body{
+    display: flex;
+    justify-content: center;
+    align-items: all;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
 }
 
-#imagem-principal {
+a{
+    text-decoration: none;
+}
+
+.box {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    height: auto;
     width: 100%;
-    height: auto;
-}
-
-.post{
-    /* border: 1px solid #000; */
-    /* margin-bottom: 30px; */
-    padding: 5px;
+    border-radius: 10px;
+    background: #22ff73;
+    flex-direction: column;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
-.post img{
-    width: 25%;
-    height: auto;
-    border-radius: 10%;
+.buttons-container{
+    display: flex;
+    justify-content: space-around;
+    height: 50;
+    width: auto;
 }
-
-.post-info{
-    /* border: 1px solid #002fff; */
-    /* margin: 10px; */
-    padding: 10px;
-}
-
-#post-resume{
-    color: #AE7A7A;
-    font-family: 'Cormorant Garamond regular';
-}
-
-/* Hovers */
-.post:hover{
-    background-color: #581509;
-    /* color: #400101; */
-    border-radius: 21px;
-}
-
-@media (max-width: 360px) {
-    .post {
-        /* justify-content: flex-start; */
-        flex-wrap: wrap;
-    }
-
-    .post img{
-        width: 75%;
-        height: auto;
-        border-radius: 10%;
-    }
-    
+button {
+    height: 50;
+    width: 100;
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
 }
